@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NIMSwift_Example' do
+  pod 'NIMSwift', :path => '../'
+
+  target 'NIMSwift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
