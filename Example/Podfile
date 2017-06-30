@@ -1,11 +1,42 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
 use_frameworks!
+inhibit_all_warnings!
 
-target 'NIMSwift_Example' do
-  pod 'NIMSwift', :path => '../'
+def app_pods
+    pod 'PromiseKit'                      #异步处理
 
-  target 'NIMSwift_Tests' do
-    inherit! :search_paths
+    pod 'NIMSDK'                          #网易云信
+    pod 'Toast', '~> 3.0'                 #网易云信(NIMKit依赖用)
+    pod 'SVProgressHUD', '~> 2.0.3'       #网易云信(NIMKit依赖用)
+    pod 'M80AttributedLabel', '~> 1.6.3'  #网易云信(NIMKit依赖用)
+    pod 'TZImagePickerController'         #网易云信(NIMKit依赖用)
 
-    
-  end
+    pod 'FTPopOverMenu_Swift'             #弹出菜单
+
+    pod 'CFBannerView', '~> 0.0.4'        # 轮播图片
+    pod 'CFCenterItemViews', '~> 0.1.0'   # 图片居中分布
+    pod 'CFExtension', '~> 0.2.1'         # 扩展
+    pod 'CFWebImage', '~> 0.1.2'          # 图片加载
+    pod 'CFWebView', '~> 0.1.1'           # WKWebView
+    pod 'CFNetworkEngine', '~> 0.1.0'     # 网络请求
+    pod 'CFProgressHUD', '~> 0.1.0'       # 指示器
+    pod 'CFRealmCache', '~> 0.1.0'        # 数据库缓存
+end
+
+target 'NIMSwift' do
+    app_pods
+end
+
+pre_install do |installer|
+    def installer.verify_no_static_framework_transitive_dependencies; end
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ENABLE_BITCODE'] = 'NO'
+            config.build_settings['SWIFT_VERSION'] = '3.0' # or '2.3'
+        end
+    end
 end
