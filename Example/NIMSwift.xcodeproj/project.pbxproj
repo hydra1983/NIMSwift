@@ -10,7 +10,7 @@
 		6DCCE948558CECA0634F9ACE /* Pods_NIMSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D32B04EA9DA8227DC5FCEE2 /* Pods_NIMSwift.framework */; };
 		ECA6D9C91F06223D00FBC491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6D8991F06223D00FBC491 /* AppDelegate.swift */; };
 		ECA6D9CA1F06223D00FBC491 /* IM.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA6D89B1F06223D00FBC491 /* IM.xcassets */; };
-		ECA6D9CB1F06223D00FBC491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA6D89C1F06223D00FBC491 /* Images.xcassets */; };
+		ECA6D9CB1F06223D00FBC491 /* System.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA6D89C1F06223D00FBC491 /* System.xcassets */; };
 		ECA6D9CC1F06223D00FBC491 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECA6D89D1F06223D00FBC491 /* Info.plist */; };
 		ECA6D9CD1F06223D00FBC491 /* NTESContactDataMember.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA6D8A61F06223D00FBC491 /* NTESContactDataMember.m */; };
 		ECA6D9CE1F06223D00FBC491 /* NTESGroupedContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA6D8A81F06223D00FBC491 /* NTESGroupedContacts.m */; };
@@ -153,7 +153,7 @@
 		E3780D7CD97969E89EE7B73C /* NIMSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NIMSwift.podspec; path = ../NIMSwift.podspec; sourceTree = "<group>"; };
 		ECA6D8991F06223D00FBC491 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA6D89B1F06223D00FBC491 /* IM.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IM.xcassets; sourceTree = "<group>"; };
-		ECA6D89C1F06223D00FBC491 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECA6D89C1F06223D00FBC491 /* System.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = System.xcassets; sourceTree = "<group>"; };
 		ECA6D89D1F06223D00FBC491 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECA6D89E1F06223D00FBC491 /* NIMSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIMSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		ECA6D8A51F06223D00FBC491 /* NTESContactDataMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTESContactDataMember.h; sourceTree = "<group>"; };
@@ -508,7 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				ECA6D89B1F06223D00FBC491 /* IM.xcassets */,
-				ECA6D89C1F06223D00FBC491 /* Images.xcassets */,
+				ECA6D89C1F06223D00FBC491 /* System.xcassets */,
 				ECA6D89D1F06223D00FBC491 /* Info.plist */,
 				ECA6D89E1F06223D00FBC491 /* NIMSwift-Bridging-Header.h */,
 			);
@@ -1144,7 +1144,7 @@
 				ECA6DA4A1F06336C00FBC491 /* Main.storyboard in Resources */,
 				ECA6DA481F06223D00FBC491 /* NIMKitSettings.bundle in Resources */,
 				ECA6D9CA1F06223D00FBC491 /* IM.xcassets in Resources */,
-				ECA6D9CB1F06223D00FBC491 /* Images.xcassets in Resources */,
+				ECA6D9CB1F06223D00FBC491 /* System.xcassets in Resources */,
 				ECA6DA471F06223D00FBC491 /* NIMKitResource.bundle in Resources */,
 				ECA6D9CC1F06223D00FBC491 /* Info.plist in Resources */,
 				ECA6DA461F06223D00FBC491 /* NIMKitEmoticon.bundle in Resources */,
@@ -1426,6 +1426,7 @@
 			baseConfigurationReference = A28547F580EFBAF65FEF4EAF /* Pods-NIMSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = P67ES2Y4EK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1454,6 +1455,7 @@
 			baseConfigurationReference = 95B10731BF2F713C5B94EB46 /* Pods-NIMSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = P67ES2Y4EK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
