@@ -8,7 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		6DCCE948558CECA0634F9ACE /* Pods_NIMSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D32B04EA9DA8227DC5FCEE2 /* Pods_NIMSwift.framework */; };
-		ECA6D9C91F06223D00FBC491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6D8991F06223D00FBC491 /* AppDelegate.swift */; };
+		EC3A62991F1DAF6700A4DF6C /* IMContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62981F1DAF6700A4DF6C /* IMContactController.swift */; };
+		EC3A629F1F1DAFA200A4DF6C /* IMContactDataMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A629B1F1DAFA200A4DF6C /* IMContactDataMember.swift */; };
+		EC3A62A01F1DAFA200A4DF6C /* IMGroupedContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A629C1F1DAFA200A4DF6C /* IMGroupedContacts.swift */; };
+		EC3A62A11F1DAFA200A4DF6C /* IMGroupedDataCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A629D1F1DAFA200A4DF6C /* IMGroupedDataCollection.swift */; };
+		EC3A62A21F1DAFA200A4DF6C /* IMTeamUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A629E1F1DAFA200A4DF6C /* IMTeamUtil.swift */; };
+		EC3A62A51F1DB07E00A4DF6C /* IMTeamListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62A31F1DB07E00A4DF6C /* IMTeamListController.swift */; };
+		EC3A62A61F1DB07E00A4DF6C /* IMTeamListControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62A41F1DB07E00A4DF6C /* IMTeamListControllerBase.swift */; };
+		EC3A62A91F1DB0B000A4DF6C /* IMSpellingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62A81F1DB0B000A4DF6C /* IMSpellingUtil.swift */; };
+		EC3A62AC1F1DE93000A4DF6C /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62AB1F1DE93000A4DF6C /* LoginManager.swift */; };
+		EC3A62AE1F1DEFF200A4DF6C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62AD1F1DEFF200A4DF6C /* LoginController.swift */; };
+		EC3A62B01F1E006100A4DF6C /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62AF1F1E006100A4DF6C /* UserController.swift */; };
+		EC3A62B31F1E007E00A4DF6C /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62B21F1E007E00A4DF6C /* UserHeaderView.swift */; };
+		EC3A62B81F1E1D3200A4DF6C /* IMNewFriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62B51F1E1D3200A4DF6C /* IMNewFriendController.swift */; };
+		EC3A62B91F1E1D3200A4DF6C /* IMNewFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62B71F1E1D3200A4DF6C /* IMNewFriendCell.swift */; };
+		EC8740A41F0F357700396507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740A31F0F357700396507 /* AppDelegate.swift */; };
+		EC8740A91F0F36C800396507 /* IM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8740A81F0F36C800396507 /* IM.storyboard */; };
+		EC8740AB1F0F36EF00396507 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8740AA1F0F36EF00396507 /* User.storyboard */; };
+		EC8740B41F0F393E00396507 /* IMSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740B21F0F393E00396507 /* IMSessionController.swift */; };
+		EC8740B51F0F393E00396507 /* IMSessionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740B31F0F393E00396507 /* IMSessionListController.swift */; };
+		EC8740B71F0F395600396507 /* IMNavgationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740B61F0F395600396507 /* IMNavgationController.swift */; };
+		EC8740BD1F0F3A8E00396507 /* IMAddFriendVerifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740B81F0F3A8E00396507 /* IMAddFriendVerifyController.swift */; };
+		EC8740BE1F0F3A8E00396507 /* IMContactAddFriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740B91F0F3A8E00396507 /* IMContactAddFriendController.swift */; };
+		EC8740BF1F0F3A8E00396507 /* IMPersonalCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740BA1F0F3A8E00396507 /* IMPersonalCardController.swift */; };
+		EC8740C01F0F3A8E00396507 /* IMPersonalRemarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740BB1F0F3A8E00396507 /* IMPersonalRemarkController.swift */; };
+		EC8740C11F0F3A8E00396507 /* IMTeamCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740BC1F0F3A8E00396507 /* IMTeamCardController.swift */; };
+		EC8740C31F0F63AB00396507 /* User.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8740C21F0F63AB00396507 /* User.xcassets */; };
+		EC8740D91F0F644D00396507 /* BezierButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740C61F0F644D00396507 /* BezierButton.swift */; };
+		EC8740DA1F0F644D00396507 /* BezierLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740C71F0F644D00396507 /* BezierLabel.swift */; };
+		EC8740DB1F0F644D00396507 /* BezierTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740C81F0F644D00396507 /* BezierTextField.swift */; };
+		EC8740DC1F0F644D00396507 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740C91F0F644D00396507 /* CircleButton.swift */; };
+		EC8740DD1F0F644D00396507 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740CA1F0F644D00396507 /* CircleImageView.swift */; };
+		EC8740DE1F0F644D00396507 /* CircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740CB1F0F644D00396507 /* CircleLabel.swift */; };
+		EC8740DF1F0F644D00396507 /* CircleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740CC1F0F644D00396507 /* CircleTextField.swift */; };
+		EC8740E01F0F644D00396507 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740CD1F0F644D00396507 /* CircleView.swift */; };
+		EC8740E11F0F644D00396507 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740CE1F0F644D00396507 /* PaddingLabel.swift */; };
+		EC8740E21F0F644D00396507 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740D01F0F644D00396507 /* Constants.swift */; };
+		EC8740E31F0F644D00396507 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740D11F0F644D00396507 /* Enums.swift */; };
+		EC8740E41F0F644D00396507 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740D21F0F644D00396507 /* Extension.swift */; };
+		EC8740E61F0F644D00396507 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740D51F0F644D00396507 /* HttpRequest.swift */; };
+		EC8740E81F0F644D00396507 /* QNUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740D81F0F644D00396507 /* QNUpload.swift */; };
 		ECA6D9CA1F06223D00FBC491 /* IM.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA6D89B1F06223D00FBC491 /* IM.xcassets */; };
 		ECA6D9CB1F06223D00FBC491 /* System.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA6D89C1F06223D00FBC491 /* System.xcassets */; };
 		ECA6D9CC1F06223D00FBC491 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECA6D89D1F06223D00FBC491 /* Info.plist */; };
@@ -151,7 +190,46 @@
 		B52418829028A26F7EC2C1FD /* Pods-NIMSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIMSwift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NIMSwift_Example/Pods-NIMSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BA2DA791B46AC2CDE4C1E60A /* Pods_NIMSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIMSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3780D7CD97969E89EE7B73C /* NIMSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NIMSwift.podspec; path = ../NIMSwift.podspec; sourceTree = "<group>"; };
-		ECA6D8991F06223D00FBC491 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC3A62981F1DAF6700A4DF6C /* IMContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMContactController.swift; sourceTree = "<group>"; };
+		EC3A629B1F1DAFA200A4DF6C /* IMContactDataMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMContactDataMember.swift; sourceTree = "<group>"; };
+		EC3A629C1F1DAFA200A4DF6C /* IMGroupedContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMGroupedContacts.swift; sourceTree = "<group>"; };
+		EC3A629D1F1DAFA200A4DF6C /* IMGroupedDataCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMGroupedDataCollection.swift; sourceTree = "<group>"; };
+		EC3A629E1F1DAFA200A4DF6C /* IMTeamUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMTeamUtil.swift; sourceTree = "<group>"; };
+		EC3A62A31F1DB07E00A4DF6C /* IMTeamListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMTeamListController.swift; sourceTree = "<group>"; };
+		EC3A62A41F1DB07E00A4DF6C /* IMTeamListControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMTeamListControllerBase.swift; sourceTree = "<group>"; };
+		EC3A62A81F1DB0B000A4DF6C /* IMSpellingUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMSpellingUtil.swift; sourceTree = "<group>"; };
+		EC3A62AB1F1DE93000A4DF6C /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		EC3A62AD1F1DEFF200A4DF6C /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		EC3A62AF1F1E006100A4DF6C /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		EC3A62B21F1E007E00A4DF6C /* UserHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
+		EC3A62B51F1E1D3200A4DF6C /* IMNewFriendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMNewFriendController.swift; sourceTree = "<group>"; };
+		EC3A62B71F1E1D3200A4DF6C /* IMNewFriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMNewFriendCell.swift; sourceTree = "<group>"; };
+		EC8740A31F0F357700396507 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC8740A81F0F36C800396507 /* IM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IM.storyboard; sourceTree = "<group>"; };
+		EC8740AA1F0F36EF00396507 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		EC8740B21F0F393E00396507 /* IMSessionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMSessionController.swift; sourceTree = "<group>"; };
+		EC8740B31F0F393E00396507 /* IMSessionListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMSessionListController.swift; sourceTree = "<group>"; };
+		EC8740B61F0F395600396507 /* IMNavgationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMNavgationController.swift; sourceTree = "<group>"; };
+		EC8740B81F0F3A8E00396507 /* IMAddFriendVerifyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMAddFriendVerifyController.swift; sourceTree = "<group>"; };
+		EC8740B91F0F3A8E00396507 /* IMContactAddFriendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMContactAddFriendController.swift; sourceTree = "<group>"; };
+		EC8740BA1F0F3A8E00396507 /* IMPersonalCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMPersonalCardController.swift; sourceTree = "<group>"; };
+		EC8740BB1F0F3A8E00396507 /* IMPersonalRemarkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMPersonalRemarkController.swift; sourceTree = "<group>"; };
+		EC8740BC1F0F3A8E00396507 /* IMTeamCardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMTeamCardController.swift; sourceTree = "<group>"; };
+		EC8740C21F0F63AB00396507 /* User.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = User.xcassets; sourceTree = "<group>"; };
+		EC8740C61F0F644D00396507 /* BezierButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierButton.swift; sourceTree = "<group>"; };
+		EC8740C71F0F644D00396507 /* BezierLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierLabel.swift; sourceTree = "<group>"; };
+		EC8740C81F0F644D00396507 /* BezierTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BezierTextField.swift; sourceTree = "<group>"; };
+		EC8740C91F0F644D00396507 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		EC8740CA1F0F644D00396507 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		EC8740CB1F0F644D00396507 /* CircleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLabel.swift; sourceTree = "<group>"; };
+		EC8740CC1F0F644D00396507 /* CircleTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTextField.swift; sourceTree = "<group>"; };
+		EC8740CD1F0F644D00396507 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		EC8740CE1F0F644D00396507 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		EC8740D01F0F644D00396507 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC8740D11F0F644D00396507 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		EC8740D21F0F644D00396507 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EC8740D51F0F644D00396507 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		EC8740D81F0F644D00396507 /* QNUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNUpload.swift; sourceTree = "<group>"; };
 		ECA6D89B1F06223D00FBC491 /* IM.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IM.xcassets; sourceTree = "<group>"; };
 		ECA6D89C1F06223D00FBC491 /* System.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = System.xcassets; sourceTree = "<group>"; };
 		ECA6D89D1F06223D00FBC491 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -485,12 +563,168 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EC3A629A1F1DAFA200A4DF6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC3A629B1F1DAFA200A4DF6C /* IMContactDataMember.swift */,
+				EC3A629C1F1DAFA200A4DF6C /* IMGroupedContacts.swift */,
+				EC3A629D1F1DAFA200A4DF6C /* IMGroupedDataCollection.swift */,
+				EC3A629E1F1DAFA200A4DF6C /* IMTeamUtil.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC3A62A71F1DB0B000A4DF6C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EC3A62A81F1DB0B000A4DF6C /* IMSpellingUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EC3A62AA1F1DE93000A4DF6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC3A62AB1F1DE93000A4DF6C /* LoginManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC3A62B11F1E007E00A4DF6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC3A62B21F1E007E00A4DF6C /* UserHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC3A62B41F1E1D3200A4DF6C /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				EC3A62B51F1E1D3200A4DF6C /* IMNewFriendController.swift */,
+				EC3A62B61F1E1D3200A4DF6C /* View */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		EC3A62B61F1E1D3200A4DF6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC3A62B71F1E1D3200A4DF6C /* IMNewFriendCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC8740A51F0F365300396507 /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				EC8740A81F0F36C800396507 /* IM.storyboard */,
+				EC8740B61F0F395600396507 /* IMNavgationController.swift */,
+				EC3A62B41F1E1D3200A4DF6C /* Notification */,
+				EC3A62A71F1DB0B000A4DF6C /* Util */,
+				EC8740AC1F0F387A00396507 /* Session */,
+				EC8740A71F0F36BF00396507 /* Contact */,
+			);
+			path = IM;
+			sourceTree = "<group>";
+		};
+		EC8740A61F0F365300396507 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EC8740AA1F0F36EF00396507 /* User.storyboard */,
+				EC3A62AF1F1E006100A4DF6C /* UserController.swift */,
+				EC3A62AD1F1DEFF200A4DF6C /* LoginController.swift */,
+				EC3A62B11F1E007E00A4DF6C /* View */,
+				EC3A62AA1F1DE93000A4DF6C /* Model */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		EC8740A71F0F36BF00396507 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				EC3A62981F1DAF6700A4DF6C /* IMContactController.swift */,
+				EC3A62A31F1DB07E00A4DF6C /* IMTeamListController.swift */,
+				EC3A62A41F1DB07E00A4DF6C /* IMTeamListControllerBase.swift */,
+				EC3A629A1F1DAFA200A4DF6C /* Model */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		EC8740AC1F0F387A00396507 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				EC8740B21F0F393E00396507 /* IMSessionController.swift */,
+				EC8740B31F0F393E00396507 /* IMSessionListController.swift */,
+				EC8740B81F0F3A8E00396507 /* IMAddFriendVerifyController.swift */,
+				EC8740B91F0F3A8E00396507 /* IMContactAddFriendController.swift */,
+				EC8740BA1F0F3A8E00396507 /* IMPersonalCardController.swift */,
+				EC8740BB1F0F3A8E00396507 /* IMPersonalRemarkController.swift */,
+				EC8740BC1F0F3A8E00396507 /* IMTeamCardController.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		EC8740C41F0F644D00396507 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EC8740C51F0F644D00396507 /* Circle */,
+				EC8740CF1F0F644D00396507 /* Config */,
+				EC8740D41F0F644D00396507 /* Http */,
+				EC8740D61F0F644D00396507 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EC8740C51F0F644D00396507 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				EC8740C61F0F644D00396507 /* BezierButton.swift */,
+				EC8740C71F0F644D00396507 /* BezierLabel.swift */,
+				EC8740C81F0F644D00396507 /* BezierTextField.swift */,
+				EC8740C91F0F644D00396507 /* CircleButton.swift */,
+				EC8740CA1F0F644D00396507 /* CircleImageView.swift */,
+				EC8740CB1F0F644D00396507 /* CircleLabel.swift */,
+				EC8740CC1F0F644D00396507 /* CircleTextField.swift */,
+				EC8740CD1F0F644D00396507 /* CircleView.swift */,
+				EC8740CE1F0F644D00396507 /* PaddingLabel.swift */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		EC8740CF1F0F644D00396507 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EC8740D01F0F644D00396507 /* Constants.swift */,
+				EC8740D11F0F644D00396507 /* Enums.swift */,
+				EC8740D21F0F644D00396507 /* Extension.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EC8740D41F0F644D00396507 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				EC8740D51F0F644D00396507 /* HttpRequest.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		EC8740D61F0F644D00396507 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EC8740D81F0F644D00396507 /* QNUpload.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		ECA6D8971F06223D00FBC491 /* NIMSwift */ = {
 			isa = PBXGroup;
 			children = (
+				EC8740C41F0F644D00396507 /* Common */,
 				ECA6D8981F06223D00FBC491 /* Classes */,
-				ECA6D89A1F06223D00FBC491 /* Supporting Files */,
 				ECA6D89F1F06223D00FBC491 /* Third Party */,
+				ECA6D89A1F06223D00FBC491 /* Supporting Files */,
 			);
 			path = NIMSwift;
 			sourceTree = "<group>";
@@ -499,7 +733,8 @@
 			isa = PBXGroup;
 			children = (
 				ECA6DA491F06336C00FBC491 /* Main.storyboard */,
-				ECA6D8991F06223D00FBC491 /* AppDelegate.swift */,
+				EC8740A51F0F365300396507 /* IM */,
+				EC8740A61F0F365300396507 /* User */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -508,8 +743,10 @@
 			isa = PBXGroup;
 			children = (
 				ECA6D89B1F06223D00FBC491 /* IM.xcassets */,
+				EC8740C21F0F63AB00396507 /* User.xcassets */,
 				ECA6D89C1F06223D00FBC491 /* System.xcassets */,
 				ECA6D89D1F06223D00FBC491 /* Info.plist */,
+				EC8740A31F0F357700396507 /* AppDelegate.swift */,
 				ECA6D89E1F06223D00FBC491 /* NIMSwift-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
@@ -1143,11 +1380,14 @@
 			files = (
 				ECA6DA4A1F06336C00FBC491 /* Main.storyboard in Resources */,
 				ECA6DA481F06223D00FBC491 /* NIMKitSettings.bundle in Resources */,
+				EC8740A91F0F36C800396507 /* IM.storyboard in Resources */,
 				ECA6D9CA1F06223D00FBC491 /* IM.xcassets in Resources */,
+				EC8740C31F0F63AB00396507 /* User.xcassets in Resources */,
 				ECA6D9CB1F06223D00FBC491 /* System.xcassets in Resources */,
 				ECA6DA471F06223D00FBC491 /* NIMKitResource.bundle in Resources */,
 				ECA6D9CC1F06223D00FBC491 /* Info.plist in Resources */,
 				ECA6DA461F06223D00FBC491 /* NIMKitEmoticon.bundle in Resources */,
+				EC8740AB1F0F36EF00396507 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,13 +1451,16 @@
 				ECA6D9CF1F06223D00FBC491 /* NTESGroupedDataCollection.m in Sources */,
 				ECA6DA101F06223D00FBC491 /* NIMUnsupportContentConfig.m in Sources */,
 				ECA6DA261F06223D00FBC491 /* NIMSessionNotificationContentView.m in Sources */,
+				EC8740E61F0F644D00396507 /* HttpRequest.swift in Sources */,
 				ECA6DA321F06223D00FBC491 /* NIMTeamInfoData.m in Sources */,
+				EC8740DE1F0F644D00396507 /* CircleLabel.swift in Sources */,
 				ECA6D9F91F06223D00FBC491 /* NIMInputAudioRecordIndicatorView.m in Sources */,
 				ECA6DA1A1F06223D00FBC491 /* NIMSessionInteractorImpl.m in Sources */,
 				ECA6DA221F06223D00FBC491 /* NIMSessionImageContentView.m in Sources */,
 				ECA6DA181F06223D00FBC491 /* NIMSessionConfigurator.m in Sources */,
 				ECA6DA3B1F06223D00FBC491 /* NIMTeamAnnouncementListCell.m in Sources */,
 				ECA6DA451F06223D00FBC491 /* NIMSpellingCenter.m in Sources */,
+				EC8740A41F0F357700396507 /* AppDelegate.swift in Sources */,
 				ECA6D9DF1F06223D00FBC491 /* NIMCommonTableData.m in Sources */,
 				ECA6D9FD1F06223D00FBC491 /* NIMInputEmoticonParser.m in Sources */,
 				ECA6D9E01F06223D00FBC491 /* NIMCommonTableDelegate.m in Sources */,
@@ -1234,20 +1477,26 @@
 				ECA6DA001F06223D00FBC491 /* NIMInputToolBar.m in Sources */,
 				ECA6DA131F06223D00FBC491 /* NIMKitLocationPoint.m in Sources */,
 				ECA6D9CD1F06223D00FBC491 /* NTESContactDataMember.m in Sources */,
+				EC8740E01F0F644D00396507 /* CircleView.swift in Sources */,
 				ECA6DA1D1F06223D00FBC491 /* NIMSessionTableAdapter.m in Sources */,
+				EC3A62991F1DAF6700A4DF6C /* IMContactController.swift in Sources */,
 				ECA6DA421F06223D00FBC491 /* NIMKitTimerHolder.m in Sources */,
 				ECA6D9FF1F06223D00FBC491 /* NIMInputMoreContainerView.m in Sources */,
 				ECA6DA141F06223D00FBC491 /* NIMKitMessageAtModel.m in Sources */,
+				EC8740E41F0F644D00396507 /* Extension.swift in Sources */,
 				ECA6DA391F06223D00FBC491 /* NIMTeamMemberListViewController.m in Sources */,
 				ECA6DA3C1F06223D00FBC491 /* NIMTeamCardHeaderCell.m in Sources */,
 				ECA6D9F01F06223D00FBC491 /* NIMGroupedUsrInfo.m in Sources */,
 				ECA6D9FB1F06223D00FBC491 /* NIMInputEmoticonContainerView.m in Sources */,
+				EC8740C01F0F3A8E00396507 /* IMPersonalRemarkController.swift in Sources */,
 				ECA6D9F11F06223D00FBC491 /* NIMContactDataItem.m in Sources */,
 				ECA6DA2B1F06223D00FBC491 /* NIMSessionViewController.m in Sources */,
 				ECA6DA081F06223D00FBC491 /* NIMAudioContentConfig.m in Sources */,
 				ECA6DA2F1F06223D00FBC491 /* NIMCardMemberItem.m in Sources */,
 				ECA6DA441F06223D00FBC491 /* NIMPinyinConverter.m in Sources */,
+				EC3A62A01F1DAFA200A4DF6C /* IMGroupedContacts.swift in Sources */,
 				ECA6DA021F06223D00FBC491 /* NIMKitEvent.m in Sources */,
+				EC3A62AC1F1DE93000A4DF6C /* LoginManager.swift in Sources */,
 				ECA6D9E41F06223D00FBC491 /* NIMKitUIConfig.m in Sources */,
 				ECA6D9EE1F06223D00FBC491 /* NIMContactDataCell.m in Sources */,
 				ECA6D9E81F06223D00FBC491 /* NIMCustomLeftBarView.m in Sources */,
@@ -1257,15 +1506,20 @@
 				ECA6D9D41F06223D00FBC491 /* NTESDemoConfig.m in Sources */,
 				ECA6DA201F06223D00FBC491 /* NIMSessionAudioContentView.m in Sources */,
 				ECA6DA2E1F06223D00FBC491 /* NIMSessionListCell.m in Sources */,
+				EC8740DA1F0F644D00396507 /* BezierLabel.swift in Sources */,
+				EC3A62A91F1DB0B000A4DF6C /* IMSpellingUtil.swift in Sources */,
 				ECA6DA031F06223D00FBC491 /* NIMKitInfo.m in Sources */,
 				ECA6DA281F06223D00FBC491 /* NIMSessionUnknowContentView.m in Sources */,
+				EC8740B51F0F393E00396507 /* IMSessionListController.swift in Sources */,
 				ECA6DA241F06223D00FBC491 /* NIMSessionMessageContentView.m in Sources */,
 				ECA6DA371F06223D00FBC491 /* NIMTeamAnnouncementListViewController.m in Sources */,
 				ECA6D9EF1F06223D00FBC491 /* NIMGroupedDataCollection.m in Sources */,
+				EC8740D91F0F644D00396507 /* BezierButton.swift in Sources */,
 				ECA6DA271F06223D00FBC491 /* NIMSessionTextContentView.m in Sources */,
 				ECA6DA211F06223D00FBC491 /* NIMSessionFileTransContentView.m in Sources */,
 				ECA6D9EA1F06223D00FBC491 /* NIMKitNotificationFirer.m in Sources */,
 				ECA6DA2A1F06223D00FBC491 /* NIMLocationViewController.m in Sources */,
+				EC8740E31F0F644D00396507 /* Enums.swift in Sources */,
 				ECA6D9F31F06223D00FBC491 /* NIMContactSelectConfig.m in Sources */,
 				ECA6DA151F06223D00FBC491 /* NIMMessageCellFactory.m in Sources */,
 				ECA6D9F51F06223D00FBC491 /* NIMContactSelectViewController.m in Sources */,
@@ -1274,36 +1528,50 @@
 				ECA6D9E21F06223D00FBC491 /* NIMKitDataProviderImpl.m in Sources */,
 				ECA6D9D51F06223D00FBC491 /* NTESFileLocationHelper.m in Sources */,
 				ECA6D9DD1F06223D00FBC491 /* UITableView+NIMScrollToBottom.m in Sources */,
+				EC8740DD1F0F644D00396507 /* CircleImageView.swift in Sources */,
 				ECA6D9F61F06223D00FBC491 /* NIMGrowingInternalTextView.m in Sources */,
 				ECA6DA1E1F06223D00FBC491 /* NIMMessageCell.m in Sources */,
 				ECA6DA231F06223D00FBC491 /* NIMSessionLocationContentView.m in Sources */,
 				ECA6D9F21F06223D00FBC491 /* NIMContactPickedView.m in Sources */,
 				ECA6D9D11F06223D00FBC491 /* NTESContactUtilItem.m in Sources */,
+				EC8740B41F0F393E00396507 /* IMSessionController.swift in Sources */,
+				EC8740E11F0F644D00396507 /* PaddingLabel.swift in Sources */,
 				ECA6D9E51F06223D00FBC491 /* NIMKit.m in Sources */,
 				ECA6D9F41F06223D00FBC491 /* NIMContactSelectTabView.m in Sources */,
 				ECA6DA1C1F06223D00FBC491 /* NIMSessionMsgDatasource.m in Sources */,
 				ECA6DA3D1F06223D00FBC491 /* NIMTeamMemberCardHeaderCell.m in Sources */,
+				EC3A62B81F1E1D3200A4DF6C /* IMNewFriendController.swift in Sources */,
 				ECA6DA171F06223D00FBC491 /* NIMKitAudioCenter.m in Sources */,
+				EC8740C11F0F3A8E00396507 /* IMTeamCardController.swift in Sources */,
 				ECA6D9D61F06223D00FBC491 /* NTESTimerHolder.m in Sources */,
 				ECA6D9DE1F06223D00FBC491 /* UIView+NIM.m in Sources */,
 				ECA6D9EC1F06223D00FBC491 /* NIMMemberGroupView.m in Sources */,
 				ECA6DA311F06223D00FBC491 /* NIMTeamCardRowItem.m in Sources */,
 				ECA6DA0B1F06223D00FBC491 /* NIMImageContentConfig.m in Sources */,
 				ECA6D9F81F06223D00FBC491 /* NIMInputAtCache.m in Sources */,
+				EC3A62A11F1DAFA200A4DF6C /* IMGroupedDataCollection.swift in Sources */,
+				EC8740E21F0F644D00396507 /* Constants.swift in Sources */,
 				ECA6DA051F06223D00FBC491 /* NIMMediaItem.m in Sources */,
 				ECA6DA251F06223D00FBC491 /* NIMSessionNetChatNotifyContentView.m in Sources */,
+				EC8740E81F0F644D00396507 /* QNUpload.swift in Sources */,
 				ECA6DA3F1F06223D00FBC491 /* NIMTimePickerView.m in Sources */,
 				ECA6D9FA1F06223D00FBC491 /* NIMInputEmoticonButton.m in Sources */,
+				EC8740DB1F0F644D00396507 /* BezierTextField.swift in Sources */,
 				ECA6DA0C1F06223D00FBC491 /* NIMLocationContentConfig.m in Sources */,
 				ECA6DA1F1F06223D00FBC491 /* NIMSessionTimestampCell.m in Sources */,
 				ECA6DA1B1F06223D00FBC491 /* NIMSessionLayoutImpl.m in Sources */,
 				ECA6D9D71F06223D00FBC491 /* NTESPinyinConverter.m in Sources */,
+				EC3A62A61F1DB07E00A4DF6C /* IMTeamListControllerBase.swift in Sources */,
 				ECA6DA3A1F06223D00FBC491 /* NIMAdvancedTeamMemberCell.m in Sources */,
 				ECA6DA0E1F06223D00FBC491 /* NIMTextContentConfig.m in Sources */,
 				ECA6DA361F06223D00FBC491 /* NIMNormalTeamCardViewController.m in Sources */,
+				EC3A62B31F1E007E00A4DF6C /* UserHeaderView.swift in Sources */,
+				EC8740DC1F0F644D00396507 /* CircleButton.swift in Sources */,
 				ECA6DA041F06223D00FBC491 /* NIMKitInfoFetchOption.m in Sources */,
 				ECA6DA291F06223D00FBC491 /* NIMSessionVideoContentView.m in Sources */,
+				EC8740BD1F0F3A8E00396507 /* IMAddFriendVerifyController.swift in Sources */,
 				ECA6DA2D1F06223D00FBC491 /* NIMSessionListViewController.m in Sources */,
+				EC3A62AE1F1DEFF200A4DF6C /* LoginController.swift in Sources */,
 				ECA6D9DA1F06223D00FBC491 /* NIMExtensionHelper.m in Sources */,
 				ECA6DA351F06223D00FBC491 /* NIMCreateTeamAnnouncement.m in Sources */,
 				ECA6D9E11F06223D00FBC491 /* NIMKitColorButtonCell.m in Sources */,
@@ -1311,18 +1579,26 @@
 				ECA6DA401F06223D00FBC491 /* NIMKitDevice.m in Sources */,
 				ECA6DA331F06223D00FBC491 /* NIMUsrInfoData.m in Sources */,
 				ECA6DA121F06223D00FBC491 /* NIMCellLayoutConfig.m in Sources */,
+				EC3A629F1F1DAFA200A4DF6C /* IMContactDataMember.swift in Sources */,
 				ECA6DA3E1F06223D00FBC491 /* NIMTeamSwitchTableViewCell.m in Sources */,
 				ECA6D9DC1F06223D00FBC491 /* UIImage+NIM.m in Sources */,
+				EC3A62B91F1E1D3200A4DF6C /* IMNewFriendCell.swift in Sources */,
 				ECA6D9FE1F06223D00FBC491 /* NIMInputEmoticonTabView.m in Sources */,
+				EC3A62A51F1DB07E00A4DF6C /* IMTeamListController.swift in Sources */,
 				ECA6D9ED1F06223D00FBC491 /* NIMPageView.m in Sources */,
+				EC3A62B01F1E006100A4DF6C /* UserController.swift in Sources */,
+				EC8740DF1F0F644D00396507 /* CircleTextField.swift in Sources */,
+				EC8740BF1F0F3A8E00396507 /* IMPersonalCardController.swift in Sources */,
 				ECA6DA071F06223D00FBC491 /* NIMTimestampModel.m in Sources */,
+				EC8740B71F0F395600396507 /* IMNavgationController.swift in Sources */,
 				ECA6D9D91F06223D00FBC491 /* M80AttributedLabel+NIMKit.m in Sources */,
 				ECA6D9E31F06223D00FBC491 /* NIMKitSwitcherCell.m in Sources */,
 				ECA6DA411F06223D00FBC491 /* NIMKitFileLocationHelper.m in Sources */,
 				ECA6DA011F06223D00FBC491 /* NIMInputView.m in Sources */,
-				ECA6D9C91F06223D00FBC491 /* AppDelegate.swift in Sources */,
 				ECA6DA161F06223D00FBC491 /* NIMMessageMaker.m in Sources */,
+				EC8740BE1F0F3A8E00396507 /* IMContactAddFriendController.swift in Sources */,
 				ECA6DA111F06223D00FBC491 /* NIMVideoContentConfig.m in Sources */,
+				EC3A62A21F1DAFA200A4DF6C /* IMTeamUtil.swift in Sources */,
 				ECA6D9E91F06223D00FBC491 /* NIMKitMediaFetcher.m in Sources */,
 				ECA6D9D81F06223D00FBC491 /* NTESSpellingCenter.m in Sources */,
 				ECA6D9D01F06223D00FBC491 /* NTESGroupedUsrInfo.m in Sources */,

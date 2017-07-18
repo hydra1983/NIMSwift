@@ -9,6 +9,47 @@
 import UIKit
 
 public extension String {
+    
+    func toDictionary() -> [String: Any]? {
+        if let data = self.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
+    }
+    
+    /**
+     URL编码
+     */
+    func encodingUrlQueryAllowed() -> String{
+        return self.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+    }
+    
+    /**
+     查找首字符所在位置
+     */
+    func index(of target: String) -> Int? {
+        if let range = self.range(of: target) {
+            return characters.distance(from: startIndex, to: range.lowerBound)
+        } else {
+            return nil
+        }
+    }
+    
+    /**
+     查找最后字符所在位置
+     */
+    func lastIndex(of target: String) -> Int? {
+        if let range = self.range(of: target, options: .backwards) {
+            return characters.distance(from: startIndex, to: range.lowerBound)
+        } else {
+            return nil
+        }
+    }
+    
     /**
      计算height
      

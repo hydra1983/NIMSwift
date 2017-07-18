@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,6 +59,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GSKStretchyHeaderView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>HappyDNS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JGProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -80,6 +95,11 @@
 			<false/>
 		</dict>
 		<key>PromiseKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Qiniu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -117,12 +137,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0595C6D8FB29AC0A9497518501603B2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0CF33782E814C36BD9E0FBA9F6CA4C3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>2684DBB1A083ECDFC74B77DEF39D2CEB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>27E79F335C4048D7F6C8122789D1A689</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,7 +182,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>7CFA6EF924236EDEFD3203A43C7A25E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9093E55AD7DE994E7722262E2B3C0ABB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -177,7 +217,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3FCC0B01C205D75F2D5C83B35CF7354</key>
+		<key>C1A54FC0100DFA5394FE6BCAC6C721A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -187,7 +227,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D33D9BE3DE3D341C4EDCBA6E4588DA83</key>
+		<key>CD71ED72EACA0156F0B96DDE230F2138</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -197,12 +242,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E449103E86BBDEBAA2AB9456FC51B0F2</key>
+		<key>D913FA352BB0763EB93E44C51B9A4D91</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E594E4FB5E5AB7A34681E97E5C1097E8</key>
+		<key>E449103E86BBDEBAA2AB9456FC51B0F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -212,12 +257,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F2478724F8D26C98D3B0274D9C42559D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F787C1E676355D133174D6BBD3450AF8</key>
+		<key>FBBBFB7DB27A059E489D3717EDA973C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

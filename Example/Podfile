@@ -13,7 +13,9 @@ def app_pods
     pod 'TZImagePickerController'         #网易云信(NIMKit依赖用)
 
     pod 'FTPopOverMenu_Swift'             #弹出菜单
-
+    pod 'Qiniu'                           #七🐂
+    pod 'GSKStretchyHeaderView'
+    
     pod 'CFBannerView', '~> 0.0.4'        # 轮播图片
     pod 'CFCenterItemViews', '~> 0.1.0'   # 图片居中分布
     pod 'CFExtension', '~> 0.2.1'         # 扩展

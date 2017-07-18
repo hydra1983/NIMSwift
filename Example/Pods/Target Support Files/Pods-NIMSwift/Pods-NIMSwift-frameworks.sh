@@ -98,6 +98,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CFBannerView/CFBannerView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CFCenterItemViews/CFCenterItemViews.framework"
@@ -108,11 +109,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CFWebImage/CFWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CFWebView/CFWebView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FTPopOverMenu_Swift/FTPopOverMenu_Swift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GSKStretchyHeaderView/GSKStretchyHeaderView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/HappyDNS/HappyDNS.framework"
   install_framework "$BUILT_PRODUCTS_DIR/JGProgressHUD/JGProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/M80AttributedLabel/M80AttributedLabel.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PromiseKit/PromiseKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Qiniu/Qiniu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RealmSwift/RealmSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
@@ -121,6 +125,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Toast/Toast.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CFBannerView/CFBannerView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CFCenterItemViews/CFCenterItemViews.framework"
@@ -131,11 +136,14 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CFWebImage/CFWebImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CFWebView/CFWebView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FTPopOverMenu_Swift/FTPopOverMenu_Swift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GSKStretchyHeaderView/GSKStretchyHeaderView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/HappyDNS/HappyDNS.framework"
   install_framework "$BUILT_PRODUCTS_DIR/JGProgressHUD/JGProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/M80AttributedLabel/M80AttributedLabel.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PromiseKit/PromiseKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Qiniu/Qiniu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RealmSwift/RealmSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
