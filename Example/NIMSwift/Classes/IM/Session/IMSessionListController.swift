@@ -76,7 +76,7 @@ class IMSessionListController: NIMSessionListViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named:"add_contact"), style: .plain, target: self, action: #selector(didClickAddContact(_:event:)))
         
         titleLabel = UILabel()
-        titleLabel.text = "职白"
+        titleLabel.text = "网易云信"
         titleLabel.font = UIFont.systemFont(ofSize: 15)
         titleLabel.sizeToFit()
         titleLabel.textAlignment = .center

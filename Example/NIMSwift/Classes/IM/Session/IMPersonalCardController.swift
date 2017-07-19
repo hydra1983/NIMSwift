@@ -25,7 +25,6 @@ class IMPersonalCardController: UIViewController,UITableViewDataSource,UITableVi
     
     fileprivate var user:NIMUser?
     fileprivate var isAdded:Bool = false
-    fileprivate var userMobile:String = ""
     
     deinit {
         NIMSDK.shared().userManager.remove(self)
@@ -43,9 +42,6 @@ class IMPersonalCardController: UIViewController,UITableViewDataSource,UITableVi
     
     func setupNav(){
         self.navigationItem.title = "详细资料"
-        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "back_nav")
-        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "back_nav")
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     func setupDelegate(){
@@ -80,10 +76,11 @@ class IMPersonalCardController: UIViewController,UITableViewDataSource,UITableVi
     }
     
     func refresh(){
-//        if let h = user?.userInfo?.avatarUrl,NSURL(string: h.encodingUrlQueryAllowed()) != nil {
-//            headerView.subviews.flatMap{$0 as? UIImageView}.first?.cf_setImage(url:NSURL(string:h.encodingUrlQueryAllowed())! , placeHolderImage: UIImage(named:"avator_default"))
-//        }
-//        
+        let info = NIMKit.shared().info(byUser: userId, option: nil)
+        if let h = info?.avatarUrlString,NSURL(string: h.encodingUrlQueryAllowed()) != nil {
+            headerView.subviews.flatMap{$0 as? UIImageView}.first?.cf_setImage(url:NSURL(string:h.encodingUrlQueryAllowed())! , placeHolderImage: UIImage(named:"avator_default"))
+        }
+        
         headerView.subviews.flatMap{$0 as? UILabel}.forEach{ v in
             if v.tag == 0 {
                 if let alias = user?.alias {
@@ -92,7 +89,7 @@ class IMPersonalCardController: UIViewController,UITableViewDataSource,UITableVi
                     v.text = user?.userInfo?.nickName
                 }
             }else if v.tag == 1 {
-                v.text = self.userMobile
+                v.text = self.userId
             }
         }
         
@@ -111,17 +108,8 @@ class IMPersonalCardController: UIViewController,UITableViewDataSource,UITableVi
                 self.refresh()
             }
         }
-        
-        
-//        request(.GET, URLs.kServerApp, URLs.kURLSearch, parameters: ["key":self.userId], encoding: nil, headers: nil, success: { (code, dict, model:BaseModel<SearchModel>?) in
-//            if code == 0,let mobile = model?.data?.info?.mobile {
-//                self.userMobile = mobile
-//                self.refresh()
-//            }
-//        }, failure: {msg in
-//        })
     }
-
+    
     // 删除好友
     func didClickDeleteFriend(){
         let act = UIAlertController(title: "删除好友", message: "删除好友后，将同时解除双方的好友关系", preferredStyle: .alert)
@@ -156,7 +144,7 @@ class IMPersonalCardController: UIViewController,UITableViewDataSource,UITableVi
     func didClickAddFriend(){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "IMAddFriendVerifyController") as! IMAddFriendVerifyController
         vc.userOrTeamId = userId
-        vc.type = 0 
+        vc.type = 0
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

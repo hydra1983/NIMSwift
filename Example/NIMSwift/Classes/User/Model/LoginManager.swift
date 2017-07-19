@@ -76,10 +76,6 @@ class LoginManager: NSObject {
             loginData?.nimToken = nil
         }
         saveData()
-        
-        NIMSDK.shared().loginManager.logout(nil)
-        
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: Constants.kNotificationTypeLogout), object: nil)
     }
     
     /** 是否已登录 **/

@@ -22,6 +22,8 @@
 		EC3A62B31F1E007E00A4DF6C /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62B21F1E007E00A4DF6C /* UserHeaderView.swift */; };
 		EC3A62B81F1E1D3200A4DF6C /* IMNewFriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62B51F1E1D3200A4DF6C /* IMNewFriendController.swift */; };
 		EC3A62B91F1E1D3200A4DF6C /* IMNewFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62B71F1E1D3200A4DF6C /* IMNewFriendCell.swift */; };
+		EC3A62BB1F1F515300A4DF6C /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62BA1F1F515300A4DF6C /* SettingController.swift */; };
+		EC3A62BD1F1F54C700A4DF6C /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A62BC1F1F54C700A4DF6C /* AboutController.swift */; };
 		EC8740A41F0F357700396507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8740A31F0F357700396507 /* AppDelegate.swift */; };
 		EC8740A91F0F36C800396507 /* IM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8740A81F0F36C800396507 /* IM.storyboard */; };
 		EC8740AB1F0F36EF00396507 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8740AA1F0F36EF00396507 /* User.storyboard */; };
@@ -204,6 +206,8 @@
 		EC3A62B21F1E007E00A4DF6C /* UserHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
 		EC3A62B51F1E1D3200A4DF6C /* IMNewFriendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMNewFriendController.swift; sourceTree = "<group>"; };
 		EC3A62B71F1E1D3200A4DF6C /* IMNewFriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMNewFriendCell.swift; sourceTree = "<group>"; };
+		EC3A62BA1F1F515300A4DF6C /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		EC3A62BC1F1F54C700A4DF6C /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		EC8740A31F0F357700396507 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8740A81F0F36C800396507 /* IM.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IM.storyboard; sourceTree = "<group>"; };
 		EC8740AA1F0F36EF00396507 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
@@ -634,6 +638,8 @@
 				EC8740AA1F0F36EF00396507 /* User.storyboard */,
 				EC3A62AF1F1E006100A4DF6C /* UserController.swift */,
 				EC3A62AD1F1DEFF200A4DF6C /* LoginController.swift */,
+				EC3A62BA1F1F515300A4DF6C /* SettingController.swift */,
+				EC3A62BC1F1F54C700A4DF6C /* AboutController.swift */,
 				EC3A62B11F1E007E00A4DF6C /* View */,
 				EC3A62AA1F1DE93000A4DF6C /* Model */,
 			);
@@ -656,8 +662,8 @@
 			children = (
 				EC8740B21F0F393E00396507 /* IMSessionController.swift */,
 				EC8740B31F0F393E00396507 /* IMSessionListController.swift */,
-				EC8740B81F0F3A8E00396507 /* IMAddFriendVerifyController.swift */,
 				EC8740B91F0F3A8E00396507 /* IMContactAddFriendController.swift */,
+				EC8740B81F0F3A8E00396507 /* IMAddFriendVerifyController.swift */,
 				EC8740BA1F0F3A8E00396507 /* IMPersonalCardController.swift */,
 				EC8740BB1F0F3A8E00396507 /* IMPersonalRemarkController.swift */,
 				EC8740BC1F0F3A8E00396507 /* IMTeamCardController.swift */,
@@ -1557,6 +1563,7 @@
 				ECA6DA3F1F06223D00FBC491 /* NIMTimePickerView.m in Sources */,
 				ECA6D9FA1F06223D00FBC491 /* NIMInputEmoticonButton.m in Sources */,
 				EC8740DB1F0F644D00396507 /* BezierTextField.swift in Sources */,
+				EC3A62BD1F1F54C700A4DF6C /* AboutController.swift in Sources */,
 				ECA6DA0C1F06223D00FBC491 /* NIMLocationContentConfig.m in Sources */,
 				ECA6DA1F1F06223D00FBC491 /* NIMSessionTimestampCell.m in Sources */,
 				ECA6DA1B1F06223D00FBC491 /* NIMSessionLayoutImpl.m in Sources */,
@@ -1575,6 +1582,7 @@
 				ECA6D9DA1F06223D00FBC491 /* NIMExtensionHelper.m in Sources */,
 				ECA6DA351F06223D00FBC491 /* NIMCreateTeamAnnouncement.m in Sources */,
 				ECA6D9E11F06223D00FBC491 /* NIMKitColorButtonCell.m in Sources */,
+				EC3A62BB1F1F515300A4DF6C /* SettingController.swift in Sources */,
 				ECA6D9DB1F06223D00FBC491 /* NSString+NIMKit.m in Sources */,
 				ECA6DA401F06223D00FBC491 /* NIMKitDevice.m in Sources */,
 				ECA6DA331F06223D00FBC491 /* NIMUsrInfoData.m in Sources */,

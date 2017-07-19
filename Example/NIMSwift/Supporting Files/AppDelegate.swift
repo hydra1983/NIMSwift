@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupNIM()
         setupMainUI()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(setupMainUI), name: NSNotification.Name(rawValue: Constants.kNotificationTypeLogout), object: nil)
+        
         return true
     }
 

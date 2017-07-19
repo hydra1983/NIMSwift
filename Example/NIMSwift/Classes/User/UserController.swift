@@ -9,7 +9,7 @@
 import UIKit
 import GSKStretchyHeaderView
 
-class UserController: UIViewController,NIMTeamManagerDelegate,GSKStretchyHeaderViewStretchDelegate {
+class UserController: UIViewController,NIMTeamManagerDelegate,GSKStretchyHeaderViewStretchDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate {
     
     @IBOutlet weak var tableView:UITableView!
     
@@ -68,8 +68,49 @@ class UserController: UIViewController,NIMTeamManagerDelegate,GSKStretchyHeaderV
     }
     
     func clickAvatar(){
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserInfoController")
-        self.navigationController?.pushViewController(vc!, animated: true)
+        let vc = UIAlertController(title: "选择图像", message: nil, preferredStyle: .actionSheet)
+        vc.addAction(UIAlertAction(title:  "取消", style: .cancel, handler:nil))
+        
+        let cameraAction = UIAlertAction(title:  "拍照", style: .default, handler: { (action) in
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.allowsEditing = true
+            picker.sourceType = .camera
+            
+            self.present(picker, animated: true, completion: nil)
+        })
+        
+        let albumAction = UIAlertAction(title:  "相册", style: .default, handler: { (action) in
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.allowsEditing = true
+            picker.sourceType = .photoLibrary
+            
+            self.present(picker, animated: true, completion: nil)
+        })
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            vc.addAction(cameraAction)
+            vc.addAction(albumAction)
+        }else{
+            vc.addAction(albumAction)
+        }
+        
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
+    // MARK: - UIImagePickerControllerDelegate
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        let image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
+        headerView.backgroundImageView.image = image
+        headerView.userImageView.image = image
+        
+        self.view.showHUDProgress()
+        
+        self.tableView.reloadData()
     }
     
     // MARK: - NIMTeamManagerDelegate
@@ -113,9 +154,5 @@ extension UserController:UITableViewDataSource,UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "setting cell", for: indexPath)
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-    }
+
 }
