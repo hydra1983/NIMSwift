@@ -13,8 +13,9 @@ struct Constants {
     //Development
     static let kNIMKey = "bb681f3f1472cef7ab8d767574ab4787" //云信
     static let kNIMCerName = "NIMSwiftDev"                     //云信
-    static let kQNKey = "Tzk2Oq7KrzVzitGtkJYCxvz5q763uxf0NZGtp6zg" //七牛
-
+    
+    static let kQNURL = "http://otdt6f4uj.bkt.clouddn.com/" //七牛
+    static let kQNToken = "Tzk2Oq7KrzVzitGtkJYCxvz5q763uxf0NZGtp6zg:t22clwhza4q05OBSFqn0KU0DXWA=:eyJzY29wZSI6Im5pbXN3aWZ0IiwiZnNpemVMaW1pdCI6MTAyNDAwMDAsIm1pbWVMaW1pdCI6ImltYWdlLyoiLCJkZWFkbGluZSI6MTg2MDU0Mzg2OX0=" //七牛token
 
     //主色调
     static let kColorIconDefault = 0x1296db

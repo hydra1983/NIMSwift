@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PromiseKit
 import GSKStretchyHeaderView
 
 class UserController: UIViewController,NIMTeamManagerDelegate,GSKStretchyHeaderViewStretchDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate {
@@ -20,6 +21,7 @@ class UserController: UIViewController,NIMTeamManagerDelegate,GSKStretchyHeaderV
         
         
         setupHeaderView()
+        refresh()
         
         NotificationCenter.default.addObserver(self, selector: #selector(refresh), name: NSNotification.Name.init(Constants.kNotificationTypeUserInfoChange), object: nil)
         
@@ -32,7 +34,7 @@ class UserController: UIViewController,NIMTeamManagerDelegate,GSKStretchyHeaderV
         self.navigationController?.isNavigationBarHidden = true
         UIApplication.shared.statusBarStyle = .lightContent
         
-        refresh()
+        
     }
     
     func refresh(){
@@ -110,7 +112,35 @@ class UserController: UIViewController,NIMTeamManagerDelegate,GSKStretchyHeaderV
         
         self.view.showHUDProgress()
         
+        let imagePromise:Promise<String> = TMUpload.shareInstance.upload(image!,Constants.kQNToken,TMUpload.shareInstance.getRandomKey())
+        
+        when(fulfilled: [imagePromise]).then{ upLoadkeys in
+             self.updateUserInfo(Constants.kQNURL + upLoadkeys[0] + "-head")
+            }.then{ isSuccess -> Void in
+                self.view.hiddenAllMessage()
+                self.view.showHUDMsg(msg: "上传成功")
+                
+            }.catch { error -> Void in
+                self.view.hiddenAllMessage()
+                self.view.showHUDMsg(msg: error.localizedDescription)
+        }
+
         self.tableView.reloadData()
+    }
+    
+    /**
+      更新IM头像
+    **/
+    func updateUserInfo(_ avatarURL:String) -> Promise<Bool>{
+        return Promise{fulfill,reject in
+            NIMSDK.shared().userManager.updateMyUserInfo([NSNumber.init(value:NIMUserInfoUpdateTag.avatar.rawValue): avatarURL], completion: { (error) in
+                if error == nil {
+                    fulfill(true)
+                }else{
+                    reject(error!)
+                }
+            })
+        }
     }
     
     // MARK: - NIMTeamManagerDelegate

@@ -50,14 +50,14 @@ class IMAddFriendVerifyController: UIViewController,UITextFieldDelegate {
         if type == 0 {
             let request = NIMUserRequest()
             request.userId = userOrTeamId
-            request.operation = .request
+            request.operation = .add //直接添加为好友,无需验证
             request.message = txt
             NIMSDK.shared().userManager.requestFriend(request) { (error) in
                 self.view.hiddenAllMessage()
                 
                 if error == nil {
-                    self.view.showHUDMsg(msg: "请求成功，等待对方验证")
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                    self.view.showHUDMsg(msg: "添加成功")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
                         self.navigationController?.popViewController(animated: true)
                     })
                 }else{

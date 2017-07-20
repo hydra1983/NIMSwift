@@ -52,7 +52,9 @@ class IMContactAddFriendController: UIViewController,UITextFieldDelegate {
         self.view.showHUDProgress()
         
         NIMSDK.shared().userManager.fetchUserInfos([infoId]) { (user, error) in
-            self.view.hiddenAllMessage()
+            if user == nil {
+                self.view.showHUDMsg(msg: "搜索不到人或群")
+            }
             if error != nil {
                 print(error!)
                 NIMSDK.shared().teamManager.fetchTeamInfo(infoId, completion: { (error, team) in
@@ -66,7 +68,7 @@ class IMContactAddFriendController: UIViewController,UITextFieldDelegate {
                         self.navigationController?.pushViewController(vc, animated: true)
                     }
                 })
-            }else{
+            }else if user != nil{
                 self.view.hiddenAllMessage()
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "IMPersonalCardController") as! IMPersonalCardController
                 vc.userId = infoId

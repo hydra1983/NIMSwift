@@ -663,8 +663,8 @@
 				EC8740B21F0F393E00396507 /* IMSessionController.swift */,
 				EC8740B31F0F393E00396507 /* IMSessionListController.swift */,
 				EC8740B91F0F3A8E00396507 /* IMContactAddFriendController.swift */,
-				EC8740B81F0F3A8E00396507 /* IMAddFriendVerifyController.swift */,
 				EC8740BA1F0F3A8E00396507 /* IMPersonalCardController.swift */,
+				EC8740B81F0F3A8E00396507 /* IMAddFriendVerifyController.swift */,
 				EC8740BB1F0F3A8E00396507 /* IMPersonalRemarkController.swift */,
 				EC8740BC1F0F3A8E00396507 /* IMTeamCardController.swift */,
 			);

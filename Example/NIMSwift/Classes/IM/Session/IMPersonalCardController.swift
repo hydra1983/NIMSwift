@@ -35,9 +35,15 @@ class IMPersonalCardController: UIViewController,UITableViewDataSource,UITableVi
         
         
         setupNav()
-        setupTableView()
+        
         setupDelegate()
         requestUserInfo()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupTableView()
     }
     
     func setupNav(){
@@ -103,7 +109,7 @@ class IMPersonalCardController: UIViewController,UITableViewDataSource,UITableVi
             self.view.hiddenAllMessage()
             if error != nil {
                 self.view.showHUDMsg(msg: "获取用户信息失败")
-            }else{
+            }else if user != nil{
                 self.user = user![0]
                 self.refresh()
             }

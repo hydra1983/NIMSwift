@@ -138,8 +138,7 @@ class IMSessionListController: NIMSessionListViewController {
                     let option =  NIMCreateTeamOption()
                     option.name = "群聊"
                     option.type = .advanced
-                    option.joinMode = .needAuth
-                    option.postscript = "邀请你加入群组"
+                    option.joinMode = .noAuth
                     //option.clientCustomInfo = "{\"type\":\(IMTeamType.Team.rawValue)}"
                     self.view.showHUDProgress()
                     NIMSDK.shared().teamManager.createTeam(option, users: userIds as! [String], completion: { (error, teamId) in
