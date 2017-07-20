@@ -125,7 +125,7 @@
                                     <constraint firstAttribute="height" constant="150" id="lhL-K5-pid"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF3-BD-cIP" customClass="CircleButton" customModule="NIMSwift" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF3-BD-cIP" customClass="CircleButton" customModule="NIMSwift" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="480" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="YpJ-GM-2CE"/>
