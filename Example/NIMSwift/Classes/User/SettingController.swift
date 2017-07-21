@@ -1,6 +1,6 @@
 //
 //  SettingController.swift
-//  Teamwork
+//  NIMSwift
 //
 //  Created by 衡成飞 on 6/20/17.
 //  Copyright © 2017 qianwang365. All rights reserved.

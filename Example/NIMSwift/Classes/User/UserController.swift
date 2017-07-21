@@ -1,6 +1,6 @@
 //
 //  UserController.swift
-//  Teamwork
+//  NIMSwift
 //
 //  Created by 衡成飞 on 5/23/17.
 //  Copyright © 2017 qianwang365. All rights reserved.

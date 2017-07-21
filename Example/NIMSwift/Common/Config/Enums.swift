@@ -15,11 +15,11 @@ enum IMNotificationHandleType: Int {
     OutOfDate = 3
 }
 
-protocol Teamwork_Enum {
+protocol NIMSwift_Enum {
     var description: String { get }
 }
 
-enum HttpErrorCode: Int,Teamwork_Enum{
+enum HttpErrorCode: Int,NIMSwift_Enum{
     case InternetError  = 10000
     case PublicKeyError = 10001
     case AppLoginError = 30004 //服务器返回的error（自动登录用，只需要用户名和密码）
