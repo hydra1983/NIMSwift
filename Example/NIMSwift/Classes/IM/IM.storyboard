@@ -666,6 +666,57 @@
             </objects>
             <point key="canvasLocation" x="2297" y="582"/>
         </scene>
+        <!--Personal Remark Controller-->
+        <scene sceneID="GLl-Zh-CLk">
+            <objects>
+                <viewController storyboardIdentifier="IMPersonalRemarkController" automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jo8-EZ-ggf" customClass="IMPersonalRemarkController" customModule="Teamwork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e24-ya-PCf"/>
+                        <viewControllerLayoutGuide type="bottom" id="tIO-25-8wY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Zg-RV-cHb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q46-NV-JSB">
+                                <rect key="frame" x="0.0" y="84" width="375" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="添加备注名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqP-Nf-6mo" userLabel="input textfield">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="40"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Jo8-EZ-ggf" id="ehw-p2-KWO"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EqP-Nf-6mo" secondAttribute="bottom" id="9ZP-uj-aic"/>
+                                    <constraint firstItem="EqP-Nf-6mo" firstAttribute="leading" secondItem="q46-NV-JSB" secondAttribute="leading" constant="20" id="Ivd-vh-AKt"/>
+                                    <constraint firstAttribute="trailing" secondItem="EqP-Nf-6mo" secondAttribute="trailing" constant="20" id="Ta2-8C-XpB"/>
+                                    <constraint firstItem="EqP-Nf-6mo" firstAttribute="top" secondItem="q46-NV-JSB" secondAttribute="top" id="xRf-yy-HnF"/>
+                                    <constraint firstAttribute="height" constant="40" id="z4c-UD-JFo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="q46-NV-JSB" firstAttribute="leading" secondItem="6Zg-RV-cHb" secondAttribute="leading" id="QHs-vd-4NE"/>
+                            <constraint firstItem="q46-NV-JSB" firstAttribute="top" secondItem="e24-ya-PCf" secondAttribute="bottom" constant="20" id="Tg3-DE-w7l"/>
+                            <constraint firstAttribute="trailing" secondItem="q46-NV-JSB" secondAttribute="trailing" id="f1V-lt-Moe"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="remarkTextField" destination="EqP-Nf-6mo" id="zGn-S7-qbX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lF1-Nc-hrx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3199" y="-1102"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow_right" width="30" height="30"/>
