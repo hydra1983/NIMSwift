@@ -1,8 +1,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/JTAppleCalendar.svg?style=flat)](http://cocoapods.org/pods/JTAppleCalendar) [![License](https://img.shields.io/cocoapods/l/JTAppleCalendar.svg?style=flat)](http://cocoapods.org/pods/JTAppleCalendar) [![](https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_74x21.png)](https://github.com/patchthecode/JTAppleCalendar/wiki/Support)
 
 <p align="center">
-   <a href="https://github.com/netease-app/NIMSwift/blob/master/screenshot.gif">
-      <img src="https://github.com/netease-app/NIMSwift/blob/master/screenshot.gif" height="450">
+   <a href="https://github.com/netease-app/NIMSwift/blob/master/screenshot.gif?raw=true">
+      <img src="https://github.com/netease-app/NIMSwift/blob/master/screenshot.gif?raw=true" height="450">
    </a>
 </p>
 
